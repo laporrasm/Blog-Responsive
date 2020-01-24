@@ -1,0 +1,292 @@
+/* IMPORTS */
+header .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  max-width: 32px;
+}
+
+header ul, header figure {
+  margin: 0;
+}
+
+header li {
+  margin-left: 4rem;
+  font-family: Helvetica;
+}
+
+header a {
+  -webkit-transition: .5s color;
+  transition: .5s color;
+}
+
+header a:hover {
+  color: #1f3f68;
+  -webkit-transition: .5s color;
+  transition: .5s color;
+}
+
+.banner {
+  padding: 3rem 0;
+  background: linear-gradient(211.87deg, #98D0FC 2.46%, #3481D7 93.24%);
+}
+
+.banner h1, .banner p {
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
+.banner p {
+  opacity: .78;
+}
+
+.search-bar {
+  margin: 4.5rem 0;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+}
+
+.search-bar input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: none;
+  background-color: inherit;
+}
+
+.search-bar img {
+  margin-right: .5rem;
+}
+
+article figure img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.article-main-text {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.article-main-text h2 {
+  margin-top: 0;
+}
+
+.article-main-img {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  text-align: right;
+}
+
+.article-main-img img {
+  max-width: 540px;
+  width: 100%;
+}
+
+.article-md {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article-md p {
+  font-size: .75rem;
+}
+
+.article-md p:first-child {
+  font-weight: bold;
+  color: #1f3f68;
+}
+
+.article-md img {
+  margin-left: 2.5rem;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #316099;
+  border-top-right-radius: 200px;
+}
+
+footer h2, footer h3, footer p, footer a, footer li, footer button {
+  color: white;
+}
+
+footer p {
+  opacity: .6;
+}
+
+footer img {
+  max-width: 32px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer .container > div:first-child {
+  padding: 5.5rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container > div:first-child div {
+  width: 50%;
+}
+
+footer .container > div:first-child div:last-child {
+  text-align: center;
+}
+
+footer .container > div:first-child button {
+  padding: 1rem 4rem;
+  background-color: #5A98D0;
+  border: none;
+  border-radius: 10px;
+}
+
+footer .container > div:nth-child(2) {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container > div:nth-child(2) li {
+  margin-top: 1rem;
+}
+
+footer .container > p:last-child {
+  margin: 0;
+  padding: 4rem 0;
+}
+
+/* LAYOUT */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1366px;
+  width: 100%;
+  margin: auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.search-bar,
+section,
+footer .container {
+  max-width: 940px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+.section-01 .grid {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-01 .section-foot {
+  text-align: right;
+}
+
+.section-02 article {
+  margin-bottom: 2rem;
+}
+
+.section-02 article figure {
+  width: 35%;
+}
+
+.section-02 article > div {
+  width: 65%;
+}
+
+.section-02 .section-foot {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* TYPOGRAPHY */
+* {
+  font-family: Arial;
+  letter-spacing: 0.05rem;
+  color: #454545;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h2,
+h3,
+h4 {
+  font-family: Helvetica;
+  color: #1f3f68;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.section-head,
+.section-foot {
+  color: #356ead;
+  opacity: 0.8;
+}
+/*# sourceMappingURL=styles.css.map */

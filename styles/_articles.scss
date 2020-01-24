@@ -1,0 +1,47 @@
+@import "variables";
+
+article {
+    figure img {
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+.article-main-text {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    h2 {
+        margin-top: 0;
+    }
+}
+
+.article-main-img {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: right;
+
+    img {
+        max-width: 540px;
+        width: 100%;
+    }
+}
+
+.article-md {
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        font-size: .75rem;
+    }
+
+    p:first-child {
+        font-weight: bold;
+        color: $h-color;
+    }
+
+    img {
+        margin-left: 2.5rem;
+        cursor: pointer;
+    }
+}

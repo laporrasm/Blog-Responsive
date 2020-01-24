@@ -1,0 +1,31 @@
+@import "_variables";
+
+header {
+    .container {
+        justify-content: space-between;
+        padding: 3rem 5rem;
+        align-items: center;
+    }
+
+    img {
+        max-width: 32px;
+    }
+
+    ul, figure {
+        margin: 0;
+    }
+    
+    li {
+        margin-left: 4rem;
+        font-family: Helvetica;
+    }
+
+    a {
+        transition: .5s color;
+
+        &:hover {
+            color: $h-color;
+            transition: .5s color;
+        }
+    }
+}
