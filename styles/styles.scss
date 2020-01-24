@@ -1,3 +1,5 @@
+
+
 /* IMPORTS */
 @import "variables";
 @import "header";
@@ -8,27 +10,18 @@
 
 /* LAYOUT */
 
-* {
-  box-sizing: border-box;
-}
-
 .wrapper {
   max-width: 1366px;
   width: 100%;
   margin: auto;
 }
 
-.flex {
-  display: flex;
-}
+.flex { display: flex; }
 
-.grid {
-  display: grid;
-}
+.grid { display: grid; }
 
 .search-bar,
-section,
-footer .container {
+section {
   max-width: 940px;
   width: 95%;
   margin-left: auto;
@@ -40,10 +33,12 @@ figure {
 }
 
 .section-01 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
   .grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    align-items: center;
+    align-items: stretch;
   }
 
   .section-foot {
@@ -54,9 +49,14 @@ figure {
 .section-02 {
   article {
     margin-bottom: 2rem;
+    align-items: center;
 
-    figure {
-      width: 35%;
+    .article-text {
+      padding: 1rem;
+
+      h4 {
+        margin: 0;
+      }
     }
     > div {
       width: 65%;
@@ -113,3 +113,5 @@ ul {
   color: #356ead;
   opacity: 0.8;
 }
+
+@import "media-queries";

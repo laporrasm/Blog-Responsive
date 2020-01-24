@@ -1,47 +1,52 @@
 @import "variables";
 
 article {
-    figure img {
-        max-width: 300px;
-        width: 100%;
-    }
+  figure img {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+.article-main {
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .article-main-text {
-    grid-column-start: 1;
-    grid-column-end: 2;
-
-    h2 {
-        margin-top: 0;
-    }
+  width: 50%;
+  padding-right: 1rem;
+  h2 {
+    margin-top: 0;
+  }
 }
 
 .article-main-img {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    text-align: right;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  text-align: right;
 
-    img {
-        max-width: 540px;
-        width: 100%;
-    }
+  img {
+    max-width: 540px;
+    width: 100%;
+  }
 }
 
 .article-md {
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 
-    p {
-        font-size: .75rem;
-    }
+  p {
+    font-size: 0.75rem;
+  }
 
-    p:first-child {
-        font-weight: bold;
-        color: $h-color;
-    }
+  p:first-child {
+    font-weight: bold;
+    color: $h-color;
+  }
 
-    img {
-        margin-left: 2.5rem;
-        cursor: pointer;
-    }
+  img {
+    margin-left: 2.5rem;
+    cursor: pointer;
+  }
 }
