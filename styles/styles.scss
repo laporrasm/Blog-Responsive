@@ -1,12 +1,4 @@
-
-
-/* IMPORTS */
 @import "variables";
-@import "header";
-@import "banner";
-@import "search-bar";
-@import "articles";
-@import "footer";
 
 /* LAYOUT */
 
@@ -28,7 +20,7 @@ section {
   margin-right: auto;
 }
 
-figure {
+body, figure {
   margin: 0;
 }
 
@@ -114,4 +106,10 @@ ul {
   opacity: 0.8;
 }
 
+/* IMPORTS */
+@import "header";
+@import "banner";
+@import "search-bar";
+@import "articles";
+@import "footer";
 @import "media-queries";

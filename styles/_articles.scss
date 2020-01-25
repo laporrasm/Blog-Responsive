@@ -1,7 +1,9 @@
 @import "variables";
 
 article {
+  align-items: center;
   figure img {
+    object-fit: cover;
     max-width: 300px;
     width: 100%;
   }
@@ -21,10 +23,8 @@ article {
 }
 
 .article-main-img {
-  grid-column-start: 2;
-  grid-column-end: 4;
+  order: 1;
   text-align: right;
-
   img {
     max-width: 540px;
     width: 100%;
@@ -37,12 +37,14 @@ article {
   align-items: center;
 
   p {
+    margin: 0;
     font-size: 0.75rem;
   }
 
   p:first-child {
     font-weight: bold;
     color: $h-color;
+    margin-bottom: .75rem;
   }
 
   img {
